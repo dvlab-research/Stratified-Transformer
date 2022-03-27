@@ -17,10 +17,10 @@ This is the official PyTorch implementation of our paper [**Stratified Transform
 ## Datasets Preparation
 
 ### S3DIS
-Please refer to https://github.com/yanx27/Pointnet_Pointnet2_pytorch for S3DIS preprocessing. Then change the 'data_root' entry in the .yaml configuration file to your data path.
+Please refer to https://github.com/yanx27/Pointnet_Pointnet2_pytorch for S3DIS preprocessing. Then change the `data_root` entry in the .yaml configuration file to your data path.
 
 ### ScanNetv2
-Please refer to https://github.com/dvlab-research/PointGroup for the ScanNetv2 preprocessing. Then change the 'data_root' entry in the .yaml configuration file accordingly.
+Please refer to https://github.com/dvlab-research/PointGroup for the ScanNetv2 preprocessing. Then change the `data_root` entry in the .yaml configuration file accordingly.
 
 ## Training
 Run the following commands for training.
@@ -31,7 +31,7 @@ Run the following commands for training.
 python3 train.py --config config/s3dis/s3dis_stratified_transformer.yaml
 ```
 
-- 3DSwin Transformer (The vernilla version shown in our paper)
+- 3DSwin Transformer (The vanilla version shown in our paper)
 ```
 python3 train.py --config config/s3dis/s3dis_swin3d_transformer.yaml
 ```
@@ -42,7 +42,7 @@ python3 train.py --config config/s3dis/s3dis_swin3d_transformer.yaml
 python3 train.py --config config/scannetv2/scannetv2_stratified_transformer.yaml
 ```
 
-- 3DSwin Transformer (The vernilla version shown in our paper)
+- 3DSwin Transformer (The vanilla version shown in our paper)
 ```
 python3 train.py --config config/scannetv2/scannetv2_swin3d_transformer.yaml
 ```
@@ -50,7 +50,7 @@ python3 train.py --config config/scannetv2/scannetv2_swin3d_transformer.yaml
 Note: It it normal to see the the results on S3DIS fluctuate between $\pm 0.5\%$ mIoU maybe because the size of S3DIS is relatively small, while the results on ScanNetv2 are relatively stable.
 
 ## Testing
-For testing, first change the 'model_path', 'save_folder' and 'data_root_val' (if applicable) accordingly. Then, run the following command.
+For testing, first change the `model_path`, `save_folder` and `data_root_val` (if applicable) accordingly. Then, run the following command.
 ```
 python3 test.py --config [YOUR_CONFIG_PATH]
 ```
