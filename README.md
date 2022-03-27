@@ -1,22 +1,22 @@
 # Stratified Transformer for 3D Point Cloud Segmentation
 *Xin Lai<sup>\*</sup>, Jianhui Liu<sup>\*</sup>, Li Jiang, Liwei Wang, Hengshuang Zhao, Shu Liu, Xiaojuan Qi, Jiaya Jia*
 
-This is the official PyTorch implementation of our paper [**Stratified Transformer for 3D Point Cloud Segmentation**] that has been accepted to 2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2022).
+This is the official PyTorch implementation of our paper [**Stratified Transformer for 3D Point Cloud Segmentation**] that has been accepted to CVPR 2022.
 
 <div align="center">
   <img src="figs/fig.jpg"/>
 </div>
 
 # Highlight 
-1. Our method (Stratified Transformer) achives the state-of-the-art performance on 3D point cloud semantic segmentation on both S3DIS and ScanNetv2 datasets. It is the first time for point-based methods to outperforms voxel-based ones such as SparseConvNet and MinkowskiNet;
-2. Stratified Transformer is point-based, and constructed via standard Transformer structure with multi-head self-attention, enjoying large receptive field, robust generalization ability as well as competitive performance;
-3. This repository develops a memory-efficient implementation to combat the issue of variant-length tokens with several CUDA kernels, avoiding unnecessary momery occupation of the vacant tokens. We also use shared memory for further acceleration.
+1. Our method (Stratified Transformer) achieves the state-of-the-art performance on 3D point cloud semantic segmentation on both S3DIS and ScanNetv2 datasets. It is the first time for a point-based method to outperforms the voxel-based ones, such as SparseConvNet and MinkowskiNet;
+2. Stratified Transformer is point-based, and constructed with standard Transformer structure with multi-head self-attention, enjoying large receptive field, robust generalization ability as well as competitive performance;
+3. This repository develops a memory-efficient implementation to combat the issue of variant-length tokens with several CUDA kernels, avoiding unnecessary momery occupation of vacant tokens. We also use shared memory for further acceleration.
 
 # Get Started
 
 ## Environment
 
-Make sure you have installed the cuda and `nvcc` can work. Then, install pointops2 by the following commands.
+Make sure you have installed cuda and `nvcc` can work. Then, install pointops2 by the following commands.
 ```
 cd lib/pointops2
 python3 setup.py install
@@ -25,13 +25,12 @@ python3 setup.py install
 ## Datasets Preparation
 
 ### S3DIS
-Please refer to https://github.com/yanx27/Pointnet_Pointnet2_pytorch for S3DIS preprocessing. Then change the `data_root` entry in the .yaml configuration file to your data path.
+Please refer to https://github.com/yanx27/Pointnet_Pointnet2_pytorch for S3DIS preprocessing. Then modify the `data_root` entry in the .yaml configuration file.
 
 ### ScanNetv2
 Please refer to https://github.com/dvlab-research/PointGroup for the ScanNetv2 preprocessing. Then change the `data_root` entry in the .yaml configuration file accordingly.
 
 ## Training
-Run the following commands for training.
 
 ### S3DIS
 - Stratified Transformer
