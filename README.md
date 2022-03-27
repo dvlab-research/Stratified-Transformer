@@ -14,6 +14,14 @@ This is the official PyTorch implementation of our paper [**Stratified Transform
 
 # Get Started
 
+## Environment
+
+Make sure you have installed the cuda and `nvcc` can work. Then, install pointops2 by the following commands.
+```
+cd lib/pointops2
+python3 setup.py install
+```
+
 ## Datasets Preparation
 
 ### S3DIS
