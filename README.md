@@ -1,7 +1,7 @@
 # Stratified Transformer for 3D Point Cloud Segmentation
 *Xin Lai<sup>\*</sup>, Jianhui Liu<sup>\*</sup>, Li Jiang, Liwei Wang, Hengshuang Zhao, Shu Liu, Xiaojuan Qi, Jiaya Jia*
 
-This is the official PyTorch implementation of our paper [**Stratified Transformer for 3D Point Cloud Segmentation**](https://mycuhk-my.sharepoint.com/:b:/g/personal/1155154502_link_cuhk_edu_hk/EcXi3XN9ZvNGhs5mvuk9vr4BDGquxF7YzWCjSF-Bx4qUbg?e=kbQl86) that has been accepted to CVPR 2022. [Paper](https://mycuhk-my.sharepoint.com/:b:/g/personal/1155154502_link_cuhk_edu_hk/EcXi3XN9ZvNGhs5mvuk9vr4BDGquxF7YzWCjSF-Bx4qUbg?e=kbQl86)
+This is the official PyTorch implementation of our paper [**Stratified Transformer for 3D Point Cloud Segmentation**](https://mycuhk-my.sharepoint.com/:b:/g/personal/1155154502_link_cuhk_edu_hk/EcXi3XN9ZvNGhs5mvuk9vr4BDGquxF7YzWCjSF-Bx4qUbg?e=kbQl86) that has been accepted to CVPR 2022. [Paper](https://mycuhk-my.sharepoint.com/:b:/g/personal/1155154502_link_cuhk_edu_hk/EcXi3XN9ZvNGhs5mvuk9vr4BDGquxF7YzWCjSF-Bx4qUbg?e=kbQl86).
 
 <div align="center">
   <img src="figs/fig.jpg"/>
