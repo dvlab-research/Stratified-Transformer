@@ -8,9 +8,9 @@ This is the official PyTorch implementation of our paper [**Stratified Transform
 </div>
 
 # Highlight 
-1. Our method (Stratified Transformer) achieves the state-of-the-art performance on 3D point cloud semantic segmentation on both S3DIS and ScanNetv2 datasets. It is the first time for a point-based method to outperforms the voxel-based ones, such as SparseConvNet and MinkowskiNet;
-2. Stratified Transformer is point-based, and constructed with standard Transformer structure with multi-head self-attention, enjoying large receptive field, robust generalization ability as well as competitive performance;
-3. This repository develops a memory-efficient implementation to combat the issue of variant-length tokens with several CUDA kernels, avoiding unnecessary momery occupation of vacant tokens. We also use shared memory for further acceleration.
+1. Our method (*Stratified Transformer*) achieves the state-of-the-art performance on 3D point cloud semantic segmentation on both S3DIS and ScanNetv2 datasets. **It is the first time for a point-based method to outperform the voxel-based ones**, such as SparseConvNet and MinkowskiNet;
+2. *Stratified Transformer* is point-based, and constructed by Transformer with standard multi-head self-attention, enjoying large receptive field, robust generalization ability as well as competitive performance;
+3. This repository develops a memory-efficient implementation to combat the issue of **variant-length tokens** with several CUDA kernels, avoiding unnecessary momery occupation of vacant tokens. We also use shared memory for further acceleration.
 
 # Get Started
 
