@@ -78,7 +78,7 @@ python3 train.py --config config/scannetv2/scannetv2_swin3d_transformer.yaml
 Note: It it normal to see the the results on S3DIS fluctuate between -0.5\% and +0.5\% mIoU maybe because the size of S3DIS is relatively small, while the results on ScanNetv2 are relatively stable.
 
 ## Testing
-For testing, first change the `model_path`, `save_folder` and `data_root_val` (if applicable) accordingly. Then, run the following command.
+For testing, first change the `model_path`, `save_folder` and `data_root_val` (if applicable) accordingly. Then, run the following command. 
 ```
 python3 test.py --config [YOUR_CONFIG_PATH]
 ```
