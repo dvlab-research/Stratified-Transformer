@@ -1,7 +1,7 @@
 # Stratified Transformer for 3D Point Cloud Segmentation
 *Xin Lai<sup>\*</sup>, Jianhui Liu<sup>\*</sup>, Li Jiang, Liwei Wang, Hengshuang Zhao, Shu Liu, Xiaojuan Qi, Jiaya Jia*
 
-This is the official PyTorch implementation of our paper [**Stratified Transformer for 3D Point Cloud Segmentation**](https://mycuhk-my.sharepoint.com/:b:/g/personal/1155154502_link_cuhk_edu_hk/EcXi3XN9ZvNGhs5mvuk9vr4BDGquxF7YzWCjSF-Bx4qUbg?e=aV3cHM) that has been accepted to CVPR 2022. [\[Paper\]](https://mycuhk-my.sharepoint.com/:b:/g/personal/1155154502_link_cuhk_edu_hk/EcXi3XN9ZvNGhs5mvuk9vr4BDGquxF7YzWCjSF-Bx4qUbg?e=aV3cHM).
+This is the official PyTorch implementation of our paper [**Stratified Transformer for 3D Point Cloud Segmentation**](https://arxiv.org/pdf/2203.14508.pdf) that has been accepted to CVPR 2022. [\[arXiv\]](https://arxiv.org/pdf/2203.14508.pdf)
 
 <div align="center">
   <img src="figs/fig.jpg"/>
@@ -16,7 +16,28 @@ This is the official PyTorch implementation of our paper [**Stratified Transform
 
 ## Environment
 
-Make sure you have installed cuda and `nvcc` can work. Then, install pointops2 by the following commands.
+Install dependencies (we recommend using conda and pytorch>=1.8.0 for quick installation, but 1.6.0+ should work with this repo)
+
+
+```
+# install torch_points3d
+
+# If you use conda and pytorch>=1.8.0, (this enables quick installation)
+conda install pytorch-cluster -c pyg
+conda install pytorch-sparse -c pyg
+conda install pyg -c pyg
+pip install torch_points3d
+
+# Otherwise,
+pip install torch_points3d
+```
+
+Install other dependencies
+```
+pip install tensorboard timm termcolor tensorboardX
+```
+
+Make sure you have installed `gcc` cuda and `nvcc` can work. Then, compile and install pointops2 by the following commands. (We have tested on gcc>=7.5.0 and nvcc>=10.1)
 ```
 cd lib/pointops2
 python3 setup.py install
