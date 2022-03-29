@@ -37,7 +37,7 @@ Install other dependencies
 pip install tensorboard timm termcolor tensorboardX
 ```
 
-Make sure you have installed `gcc` cuda and `nvcc` can work. Then, compile and install pointops2 by the following commands. (We have tested on gcc>=7.5.0 and nvcc>=10.1)
+Make sure you have installed `gcc` and `cuda`, and `nvcc` can work (Note that if you install cuda by conda, it won't provide nvcc and you should install cuda manually.). Then, compile and install pointops2 as follows. (We have tested on gcc>=7.5.0 and cuda>=10.1)
 ```
 cd lib/pointops2
 python3 setup.py install
