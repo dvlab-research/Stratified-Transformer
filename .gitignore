@@ -92,4 +92,4 @@ torch_points3d/
 output/*
 *.pth
 */__pycache__
-*.txt
+data/
