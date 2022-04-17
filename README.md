@@ -37,7 +37,9 @@ Install other dependencies
 pip install tensorboard timm termcolor tensorboardX
 ```
 
-Make sure you have installed `gcc` and `cuda`, and `nvcc` can work (Note that if you install cuda by conda, it won't provide nvcc and you should install cuda manually.). Then, compile and install pointops2 as follows. (We have tested on gcc>=7.5.0 and cuda>=10.1)
+If you meet issues with the above commands, you can also directly install the environment via `pip install -r requirements.txt`.
+
+Make sure you have installed `gcc` and `cuda`, and `nvcc` can work (Note that if you install cuda by conda, it won't provide nvcc and you should install cuda manually.). Then, compile and install pointops2 as follows. (We have tested on gcc==7.5.0 and cuda==10.1)
 ```
 cd lib/pointops2
 python3 setup.py install
@@ -75,7 +77,7 @@ python3 train.py --config config/scannetv2/scannetv2_stratified_transformer.yaml
 python3 train.py --config config/scannetv2/scannetv2_swin3d_transformer.yaml
 ```
 
-Note: It it normal to see the the results on S3DIS fluctuate between -0.5\% and +0.5\% mIoU maybe because the size of S3DIS is relatively small, while the results on ScanNetv2 are relatively stable.
+Note: It is normal to see the the results on S3DIS fluctuate between -0.5\% and +0.5\% mIoU maybe because the size of S3DIS is relatively small, while the results on ScanNetv2 are relatively stable.
 
 ## Testing
 For testing, first change the `model_path`, `save_folder` and `data_root_val` (if applicable) accordingly. Then, run the following command. 
