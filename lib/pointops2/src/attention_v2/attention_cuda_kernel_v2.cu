@@ -1,3 +1,5 @@
+/* written by Xin Lai. Email: xinlai@cse.cuhk.edu.hk */
+
 #include "../cuda_utils.h"
 #include "attention_cuda_kernel_v2.h"
 
