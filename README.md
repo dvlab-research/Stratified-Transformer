@@ -16,29 +16,21 @@ This is the official PyTorch implementation of our paper [**Stratified Transform
 
 ## Environment
 
-Install dependencies (we recommend using conda and pytorch>=1.8.0 for quick installation, but 1.6.0+ should work with this repo)
-
+1.Install dependencies
 
 ```
-# install torch_points3d
-
-# If you use conda and pytorch>=1.8.0, (this enables quick installation)
-conda install pytorch-cluster -c pyg
-conda install pytorch-sparse -c pyg
-conda install pyg -c pyg
-pip install torch_points3d
-
-# Otherwise,
-pip install torch_points3d
+pip install -r requirements.txt
 ```
 
-Install other dependencies
+If you have any problem with the above command, you can also install them by
+
 ```
+pip install torch_sparse==0.6.12
+pip install torch_points3d==1.3.0
 pip install tensorboard timm termcolor tensorboardX
 ```
 
-If you meet issues with the above commands, you can also directly install the environment via `pip install -r requirements.txt`.
-
+2.Compile pointops
 Make sure you have installed `gcc` and `cuda`, and `nvcc` can work (Note that if you install cuda by conda, it won't provide nvcc and you should install cuda manually.). Then, compile and install pointops2 as follows. (We have tested on gcc==7.5.0 and cuda==10.1)
 ```
 cd lib/pointops2
