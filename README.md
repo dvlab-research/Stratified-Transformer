@@ -16,7 +16,7 @@ This is the official PyTorch implementation of our paper [**Stratified Transform
 
 ## Environment
 
-1.Install dependencies
+1. Install dependencies
 
 ```
 pip install -r requirements.txt
@@ -30,7 +30,8 @@ pip install torch_points3d==1.3.0
 pip install tensorboard timm termcolor tensorboardX
 ```
 
-2.Compile pointops
+2. Compile pointops
+
 Make sure you have installed `gcc` and `cuda`, and `nvcc` can work (Note that if you install cuda by conda, it won't provide nvcc and you should install cuda manually.). Then, compile and install pointops2 as follows. (We have tested on gcc==7.5.0 and cuda==10.1)
 ```
 cd lib/pointops2
