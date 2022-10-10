@@ -1,6 +1,6 @@
 DATA:
   data_name: s3dis
-  data_root: # Fill in the pre-processed data path (which contains the .npy files)
+  data_root: /dev/shm/stanford_indoor3d # Fill in the pre-processed data path (which contains the .npy files)
   test_area: 5
   classes: 13
   fea_dim: 6
