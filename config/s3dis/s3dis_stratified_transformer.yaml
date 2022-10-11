@@ -1,6 +1,6 @@
 DATA:
   data_name: s3dis
-  data_root: /dev/shm/stanford_indoor3d # Fill in the pre-processed data path (which contains the .npy files)
+  data_root: # Fill in the pre-processed data path (which contains the .npy files)
   test_area: 5
   classes: 13
   fea_dim: 6
@@ -47,10 +47,10 @@ TRAIN:
   use_amp: True
   optimizer: AdamW 
   ignore_label: 255
-  train_gpu: [0, 1, 2, 3, 4, 5, 6, 7]
+  train_gpu: [0, 1, 2, 3]
   workers: 16  # data loader workers
-  batch_size: 16  # batch size for training
-  batch_size_val: 8  # batch size for validation during training, memory and speed tradeoff
+  batch_size: 8  # batch size for training
+  batch_size_val: 4  # batch size for validation during training, memory and speed tradeoff
   base_lr: 0.006
   epochs: 100
   start_epoch: 0
