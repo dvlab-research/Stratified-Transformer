@@ -1,7 +1,7 @@
 # Stratified Transformer for 3D Point Cloud Segmentation
 *Xin Lai<sup>\*</sup>, Jianhui Liu<sup>\*</sup>, Li Jiang, Liwei Wang, Hengshuang Zhao, Shu Liu, Xiaojuan Qi, Jiaya Jia*
 
-This is the official PyTorch implementation of our paper [**Stratified Transformer for 3D Point Cloud Segmentation**](https://arxiv.org/pdf/2203.14508.pdf) that has been accepted to CVPR 2022. [\[arXiv\]](https://arxiv.org/pdf/2203.14508.pdf)
+This is the official PyTorch implementation of our paper [**Stratified Transformer for 3D Point Cloud Segmentation**](https://arxiv.org/pdf/2203.14508.pdf) that has been accepted to CVPR 2022. [\[arXiv\]](https://arxiv.org/pdf/2203.14508.pdf) [\[CVF\]](https://openaccess.thecvf.com/content/CVPR2022/papers/Lai_Stratified_Transformer_for_3D_Point_Cloud_Segmentation_CVPR_2022_paper.pdf)
 
 <div align="center">
   <img src="figs/fig.jpg"/>
@@ -88,9 +88,10 @@ If you find this project useful, please consider citing:
 
 ```
 @inproceedings{lai2022stratified,
-  title     = {Stratified Transformer for 3D Point Cloud Segmentation},
-  author    = {Xin Lai, Jianhui Liu, Li Jiang, Liwei Wang, Hengshuang Zhao, Shu Liu, Xiaojuan Qi, Jiaya Jia},
-  booktitle = {CVPR},
-  year      = {2022}
+  title={Stratified Transformer for 3D Point Cloud Segmentation},
+  author={Lai, Xin and Liu, Jianhui and Jiang, Li and Wang, Liwei and Zhao, Hengshuang and Liu, Shu and Qi, Xiaojuan and Jia, Jiaya},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={8500--8509},
+  year={2022}
 }
 ```
