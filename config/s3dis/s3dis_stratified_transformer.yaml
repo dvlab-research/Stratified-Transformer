@@ -1,6 +1,6 @@
 DATA:
   data_name: s3dis
-  data_root: # Fill in the pre-processed data path (which contains the .npy files)
+  data_root: dataset/stanford_indoor3d # Fill in the pre-processed data path (which contains the .npy files)
   test_area: 5
   classes: 13
   fea_dim: 6
@@ -81,6 +81,6 @@ TEST:
   test_gpu: [0]
   test_workers: 4
   batch_size_test: 4
-  model_path: # Fill the path of the trained .pth file model
-  save_folder: # Fill the path to store the .npy files for each scene
+  model_path: pretrained/s3dis_model_best.pth # Fill the path of the trained .pth file model
+  save_folder: output/test/s3dis/stratified # Fill the path to store the .npy files for each scene
   names_path: data/s3dis/s3dis_names.txt

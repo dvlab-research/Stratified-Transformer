@@ -185,7 +185,14 @@ class WindowAttention(nn.Module):
         # # Position embedding
         relative_position = xyz[index_0] - xyz[index_1]
         relative_position = torch.round(relative_position * 100000) / 100000
-        relative_position_index = (relative_position + 2 * self.window_size - 0.0001) // self.quant_size
+
+        # the previous code for computing relative_position_index cannot guarantee the lower bound (0)
+        # relative_position_index = (relative_position + 2 * self.window_size - 0.0001) // self.quant_size
+        relative_position_index = (relative_position + 2 * self.window_size) // self.quant_size
+        low_bound, high_bound = 0, 2 * self.quant_grid_length - 1
+        relative_position_index[relative_position_index == low_bound-1] = low_bound
+        relative_position_index[relative_position_index == high_bound+1] = high_bound
+
         assert (relative_position_index >= 0).all()
         assert (relative_position_index <= 2*self.quant_grid_length - 1).all()
 

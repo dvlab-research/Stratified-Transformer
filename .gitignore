@@ -93,3 +93,5 @@ output/*
 *.pth
 */__pycache__
 data/
+
+pretrained/
